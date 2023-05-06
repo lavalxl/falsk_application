@@ -14,6 +14,13 @@
 ```
 pip install -r requirements.txt
 ```
+После необходимо добавить в корневую директорию проекта ваш файл ".env".
+Он должен иметь вид:
+
+```
+WEATHER_API_KEY=<your key>
+CURRENCY_API_KEY=<your key>
+```
 
 Запускаем приложение:
 

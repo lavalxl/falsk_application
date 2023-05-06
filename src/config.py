@@ -1,5 +1,9 @@
-# weather
-weather_api_key = '999e2bcb20d7590c678e9413eab1b396'
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+weather_api_key = os.getenv("WEATHER_API_KEY")
 weather_url = 'https://api.openweathermap.org/data/2.5/weather?q={}&appid={}'
 
 background_url = 'https://unsplash.com/napi/search/photos?query={}&per_page=20&page=1&xp='
@@ -7,8 +11,7 @@ url_name = "https://images.unsplash.com/photo-1500964757637-c85e8a162699?ixid=Mn
 
 initial_city = "Moscow"
 
-# currency
-currency_api_key = '4c50b5fd87d33cb8a6d1344938441002'
+currency_api_key = os.getenv("CURRENCY_API_KEY")
 currency_url = 'https://currate.ru/api/?get=rates&pairs={}&key={}'
 
 initial_currency = 'USDRUB,RUBUSD'
